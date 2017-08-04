@@ -21,6 +21,15 @@ public class CustomerServiceTestUtils {
         return c;
     }
 
+    public static Customer changeTestCustomerData(Customer c) {
+        c.setFirstName(Long.toString(System.currentTimeMillis()));
+        c.setLastName(Long.toString(System.currentTimeMillis()));
+        c.setPhone(Long.toString(System.currentTimeMillis()));
+        c.setEmail(Long.toString(System.currentTimeMillis()));
+
+        return c;
+    }
+
 
     public static Customer findInList(List<Customer> customers, String first, String last, String phone, String email) {
         // Find the new customer in the list
