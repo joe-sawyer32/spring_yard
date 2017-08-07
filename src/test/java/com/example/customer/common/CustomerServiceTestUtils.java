@@ -11,7 +11,7 @@ public class CustomerServiceTestUtils {
         String fn = Long.toString(System.currentTimeMillis());
         String ln = Long.toString(System.currentTimeMillis());
         String p = Long.toString(System.currentTimeMillis());
-        String e = Long.toString(System.currentTimeMillis()) + "@domain.com";
+        String e = Long.toString(System.currentTimeMillis()) + "@domains.com";
 
         Customer c = new Customer();
         c.setFirstName(fn);

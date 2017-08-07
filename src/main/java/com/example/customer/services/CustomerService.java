@@ -5,7 +5,7 @@ import com.example.customer.domains.Customer;
 import java.util.List;
 
 public interface CustomerService {
-    void add(Customer customer);
+    Customer add(Customer customer);
 
     void update(Customer customer);
 
