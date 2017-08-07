@@ -1,6 +1,6 @@
 package com.example.customer.services;
 
-import com.example.customer.models.Customer;
+import com.example.customer.domains.Customer;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

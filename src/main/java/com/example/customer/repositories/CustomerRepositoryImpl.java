@@ -1,6 +1,6 @@
 package com.example.customer.repositories;
 
-import com.example.customer.models.Customer;
+import com.example.customer.domains.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
