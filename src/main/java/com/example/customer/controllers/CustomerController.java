@@ -26,7 +26,7 @@ public class CustomerController {
         return "view_customers";
     }
 
-    @GetMapping("/customers/add")
+    @GetMapping("/customer")
     String newCustomer() {
         return "new_customer";
     }
@@ -37,4 +37,8 @@ public class CustomerController {
         return "redirect:customers";
     }
 
+    @GetMapping("/login")
+    String login() {
+        return "login";
+    }
 }
