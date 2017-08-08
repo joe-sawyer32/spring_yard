@@ -6,7 +6,6 @@
     <title>SpringYard - Login</title>
 </head>
 <body>
-    <a href="/customers">Return to Customers</a>
     <h1>Login</h1>
     <form th:action="@{/login}" method="post">
         <table>
@@ -19,13 +18,10 @@
                 <td><input type="password" name="password" id="password" placeholder="password"/></td>
             </tr>
             <tr>
-                <td><label for="passwordConfirm">Confirm Password:</label></td>
-                <td><input type="password" name="passwordConfirm" id="passwordConfirm" placeholder="confirm password"/></td>
-            </tr>
-            <tr>
                 <td><button type="submit">Login</button></td>
             </tr>
         </table>
     </form>
+    <a href="/customers">Return to Customers</a>
 </body>
 </html>

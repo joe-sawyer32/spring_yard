@@ -7,10 +7,14 @@
     <title>SpringYard - New Customer</title>
 </head>
 <body>
-    <div>
-
-    </div>
-    <a href="/customers">Return to Customers</a>
+    <table sec:authorize="isAuthenticated()">
+        <tr>
+            <td>You are currently logged in &nbsp;&nbsp;</td>
+            <td><form th:action="@{/logout}" method="post">
+                    <button type="submit">Log Out</button>
+                </form></td>
+        </tr>
+    </table>
     <h1>New Customer Information</h1>
     <form th:action="@{/customer}" name="newCustomer" method="post">
         <table>
@@ -37,6 +41,7 @@
                 </td>
             </tr>
         </table>
-    </form>
+    </form> <br/>
+    <a href="/customers">Return to Customers</a>
 </body>
 </html>
