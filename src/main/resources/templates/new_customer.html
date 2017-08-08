@@ -10,32 +10,30 @@
     <div>
 
     </div>
+    <a href="/customers">Return to Customers</a>
     <h1>New Customer Information</h1>
-    <form th:action="@{/customer}" method="post">
+    <form th:action="@{/customer}" name="newCustomer" method="post">
         <table>
             <tr>
                 <td><label for="firstName">First Name:</label></td>
-                <td><input type="text" name="firstName" id="firstName" placeholder="first name"></td>
+                <td><input type="text" name="firstName" id="firstName" placeholder="first name"/></td>
             </tr>
             <tr>
                 <td><label for="lastName">Last Name:</label></td>
-                <td><input type="text" name="lastName" id="lastName" placeholder="last name"></td>
+                <td><input type="text" name="lastName" id="lastName" placeholder="last name"/></td>
             </tr>
             <tr>
                 <td><label for="phone">* Phone Number:</label></td>
-                <td><input type="phone" name="phone" id="phone" placeholder="phone"></td>
+                <td><input type="text" name="phone" id="phone" placeholder="phone"/></td>
             </tr>
             <tr>
                 <td><label for="email">* Email Address:</label></td>
-                <td><input type="email" name="email" id="email" placeholder="email"></td>
+                <td><input type="email" name="email" id="email" placeholder="email"/></td>
             </tr>
             <tr>
                 <td>* optional</td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
+                <td align="right">
                     <button type="submit">Submit</button>
-                    <button formaction="/customers">Cancel</button>
                 </td>
             </tr>
         </table>

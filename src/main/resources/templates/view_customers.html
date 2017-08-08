@@ -11,7 +11,7 @@
 
     </div>
     <h1>List of Customers</h1>
-    <h3><a href="/customer">Add a new customer</a></h3>
+    <h3><a href="/customers/add">Add a new customer</a></h3>
     <table>
         <tr>
             <th>ID</th>
@@ -22,8 +22,8 @@
         </tr>
         <tr th:each="customer : ${customers}">
             <td th:text="${customer.id}"></td>
-            <td th:text="${customer.firstname}"></td>
-            <td th:text="${customer.lastname}"></td>
+            <td th:text="${customer.firstName}"></td>
+            <td th:text="${customer.lastName}"></td>
             <td th:text="${customer.phone}"></td>
             <td th:text="${customer.email}"></td>
         </tr>
