@@ -41,4 +41,9 @@ public class CustomerController {
     String login() {
         return "login";
     }
+
+    @GetMapping("/administration")
+    String admins() {
+        return "administration";
+    }
 }

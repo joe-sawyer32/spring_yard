@@ -32,6 +32,7 @@
             <td th:text="${customer.phone}"></td>
             <td th:text="${customer.email}"></td>
         </tr>
-    </table>
+    </table> <br/>
+    <a sec:authorize="hasRole('ROLE_ADMIN')" href="/administration">Admin</a>
 </body>
 </html>
